@@ -363,6 +363,7 @@
                 updateDataTableSelectAllCtrl(table);
             });
 
+            $('.dataTables_filter').addClass('pull-right');
 
         });
 
