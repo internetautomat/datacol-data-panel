@@ -1,0 +1,6 @@
+    <label class="radio-inline">
+        {!! Form::radio('$FIELD_NAME$', "$VALUE$", null) !!} $VALUE$
+    </label>   
+    @foreach($errors->get('$FIELD_NAME$') as $message)
+        <span class='help-inline text-danger'>{{ $message }}</span>
+    @endforeach

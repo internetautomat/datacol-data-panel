@@ -1,0 +1,10 @@
+<!-- 'bootstrap / Toggle Switch $FIELD_NAME_TITLE$ Field' -->
+<div class="form-group col-sm-6 {{ $errors->has('$FIELD_NAME$') ? 'has-error' : '' }}">
+    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+    <label class="checkbox-inline">
+   {!! Form::checkbox('$FIELD_NAME$', 1, true,  ['data-toggle' => 'toggle']) !!}
+    </label>   
+    @foreach($errors->get('$FIELD_NAME$') as $message)
+        <span class='help-inline text-danger'>{{ $message }}</span>
+    @endforeach
+</div>
